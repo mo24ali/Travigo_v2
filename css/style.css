@@ -20,16 +20,12 @@
     --p-font: 1.1rem;
 }
 
-html {
-    font-family: Inter;
-    font-size: 16px;
-}
 
 
 
 
 body {
-    background-image: url(../assets/background.png);
+    background-image: url(../assets/Decore.png);
     background-size: cover;
     color: var(--text-color);
     font-weight: 400;
@@ -38,10 +34,8 @@ body {
     text-transform: none;
     letter-spacing: normal;
     line-height: 1.15;
-    /*color: var(--dl-color-theme-neutral-dark);
-    background: var(--dl-color-theme-neutral-light);
-
-    fill: var(--dl-color-theme-neutral-dark);*/
+    text-align: center;
+    
 }
 
 
@@ -224,10 +218,24 @@ main {
     gap: var(--big-font);
 }
 
+.new-letter-span{
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+}
 #new-letter-section {
     background-color: rgba(231, 156, 231, 0.14);
     width: 50%;
     height: 50%;
+
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 80vh;
 
 }
 
