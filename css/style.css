@@ -224,7 +224,7 @@ main {
     text-align: center;
 }
 #new-letter-section {
-    background-color: rgba(231, 156, 231, 0.14);
+    background-image: url(../assets/form-background.png);
     width: 50%;
     height: 50%;
 
@@ -256,7 +256,9 @@ footer{
 }
 
 #sign-up-section {
-    background-color: rgba(231, 156, 231, 0.14);
+   
+    background-image: url(../assets/form-background.png);
+    background-size: cover;
     border: #5a7184;
     border-radius: 10%;
     width: 50rem;
