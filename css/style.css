@@ -42,7 +42,7 @@ body {
 
 
 header {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     width: 100%;
@@ -131,9 +131,9 @@ header {
 
 main {
     display: flex;
-    justify-content: center;
+    justify-content: center;    
     align-items: center;
-    min-height: 80vh;
+    position: relative;
 
 
     .home-text {
