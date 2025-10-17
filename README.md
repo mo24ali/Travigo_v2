@@ -15,6 +15,7 @@
 Travigo_v2/
 ├── assets/
 ├── css/
+├── js/
 ├── about.html
 ├── contact.html
 ├── destinations.html
@@ -119,15 +120,6 @@ python3 -m http.server 8000
 </ol>
 
 <p>Tu peux aussi ouvrir une <a href="https://github.com/mo24ali/Travigo_v2/issues">issue</a> pour signaler un bug ou proposer une amélioration.</p>
-
----
-
-<h2>📄 Licence</h2>
-
-<p>
-Aucune licence explicite n’est fournie.  
-Tu peux ajouter un fichier <code>LICENSE</code> (par exemple MIT, Apache 2.0) selon le niveau d’ouverture souhaité pour ce projet.
-</p>
 
 ---
 
