@@ -600,6 +600,7 @@ select{
     justify-content: space-around;
     margin-bottom: 200px;
     margin-top: none;  
+    display: inline-block; /*inline-block make the div fit its own content*/
 }
 
 .about-stories{
@@ -619,10 +620,53 @@ select{
     font-size: 100px;
 }
 
-.testimonials-card img{
-    border-radius: 100px;
+.testimonials-card{
+    background-color: #ffffff;
+    display: inline-block;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
 }
+.img-fluid{
+    margin-top: -90px;
+    margin-left: -90px;
+} 
+.rounded-circle{
+    border-radius: 80px;
+} 
 
+.m-top{
+    position: relative;
+}
 .about-main{
     margin-bottom: 200px;
+}
+
+.about-section h1{
+    font-size: 5rem;
+    padding-bottom: 50px;
+}
+
+.who-card p{
+    color: #5a7184; 
+    font-size: xx-large; 
+    text-align: left;
+    font-weight: 500;
+    padding: 50px;
+    padding-top: 0;
+}
+.testimonial_author{
+    color: #5a7184;
+    font-size: xx-large;
+    font-weight: 600;
+    text-align: start;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.author_place{
+    text-align: start;
+    color: #5a7184;
+    padding-left: 50px;
 }
