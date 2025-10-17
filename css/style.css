@@ -369,7 +369,7 @@ img {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     justify-content: center;
     align-content: center;
-    
+
 
 
 }
@@ -403,6 +403,7 @@ img {
     will-change: filter;
 
 }
+
 /* Services Cards*/
 
 .services-card {
@@ -420,6 +421,7 @@ img {
     border: none;
 
 }
+
 .services-card p {
     color: #666;
     font-size: 15px;
@@ -458,7 +460,7 @@ img {
     overflow: hidden;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     margin: 20px;
-    
+
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 }
@@ -513,7 +515,7 @@ img {
 /*Second section of the main */
 .second-section {
     display: flex;
-    justify-content: flex-start;    
+    justify-content: flex-start;
     align-items: flex-start;
     gap: 60px;
     padding: 60px 10%;
@@ -521,16 +523,20 @@ img {
     text-align: left;
 }
 
-.second-section .text , .pic-title h4{
+.second-section .text,
+.pic-title h4 {
     flex: 1;
     min-width: 320px;
     text-align: left;
 }
+
 .second-section-texts p {
     flex: 1;
     min-width: 320px;
 }
-.second-section-texts p , h4{
+
+.second-section-texts p,
+h4 {
     color: #5a7184;
 }
 
@@ -547,7 +553,7 @@ img {
     border-radius: 25px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
+
 
 }
 
@@ -575,7 +581,7 @@ img {
 }
 
 
-select{
+select {
     background-color: #ffffff00;
     size: 50px;
     padding: 20px;
@@ -584,7 +590,7 @@ select{
 }
 
 
-.who-card{
+.who-card {
     width: auto;
     height: auto;
     background-color: #ffffff;
@@ -595,67 +601,81 @@ select{
     padding: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     justify-content: center;
-    align-content: center; 
+    align-content: center;
     padding: 20px;
     justify-content: space-around;
     margin-bottom: 200px;
-    margin-top: none;  
-    display: inline-block; /*inline-block make the div fit its own content*/
+    margin-top: none;
+    display: inline-block;
+    /*inline-block make the div fit its own content*/
 }
 
-.about-stories{
+
+/*About stories testimonials section style*/
+.about-stories {
     display: flex;
     justify-content: space-evenly;
+    text-align: left;
 }
 
-.about-stories .testimonials-title{
+.about-stories .testimonials-title {
     position: left;
     margin-bottom: 50px;
     margin-right: 500px;
     font-weight: 900;
-    font-size: 50px;
 }
 
-.testimonials-title p{
-    font-size: 100px;
+.testimonials-title h4 {
+    color: #5a7184;
+    font-size: 18px;
+    margin: 0;
+    font-size: x-large;
 }
 
-.testimonials-card{
+.testimonials-title p {
+    font-family: 'Georgia', serif;
+}
+
+
+.testimonials-card {
     background-color: #ffffff;
     display: inline-block;
     padding: 30px;
     border-radius: 20px;
     box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
 }
-.img-fluid{
+
+.img-fluid {
     margin-top: -90px;
     margin-left: -90px;
-} 
-.rounded-circle{
-    border-radius: 80px;
-} 
+}
 
-.m-top{
+.rounded-circle {
+    border-radius: 80px;
+}
+
+.m-top {
     position: relative;
 }
-.about-main{
+
+.about-main {
     margin-bottom: 200px;
 }
 
-.about-section h1{
+.about-section h1 {
     font-size: 5rem;
     padding-bottom: 50px;
 }
 
-.who-card p{
-    color: #5a7184; 
-    font-size: xx-large; 
+.who-card p {
+    color: #5a7184;
+    font-size: xx-large;
     text-align: left;
     font-weight: 500;
     padding: 50px;
-    padding-top: 0;
 }
-.testimonial_author{
+
+.testimonial_author {
     color: #5a7184;
     font-size: xx-large;
     font-weight: 600;
@@ -665,7 +685,7 @@ select{
     padding-bottom: 10px;
 }
 
-.author_place{
+.author_place {
     text-align: start;
     color: #5a7184;
     padding-left: 50px;
