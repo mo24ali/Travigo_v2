@@ -18,17 +18,12 @@ html {
     --text-color: #221314;
     --second-color: #5a7184;
     --main-color: #6e54fa;
-    --big-font: 6rem;
-    --h2-font: 3rem;
-    --p-font: 1.1rem;
-    --big-font: 6rem;
-    --h2-font: 3rem;
-    --p-font: 1.1rem;
     --big-font: clamp(2.5rem, 5vw + 1rem, 6rem);
     --h2-font: clamp(1.5rem, 3vw + 1rem, 3rem);
     --p-font: clamp(1rem, 1vw + 0.5rem, 1.1rem);
 }
 
+/*General styling*/
 .card,
 .services-card,
 .who-card {
@@ -36,30 +31,14 @@ html {
 }
 
 
-
+/*Html element styling*/
 textarea {
     resize: none;
     border: none;
 }
 
 
-.social a {
-    height: 80px;
-    width: 80px;
-    color: var(--main-color);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 21px;
-    border-radius: 15px;
-    transition: .3s;
-    margin-right: 10px;
-}
-
-.social a:hover {
-    transform: scale(1.1);
-}
-
+/*Body general settings*/
 body {
     background-image: url(../assets/Decore.png);
     background-attachment: fixed;
@@ -84,6 +63,7 @@ body {
     overflow-x: hidden;
 }
 
+/*General styling */
 h1,
 h2,
 h3,
@@ -95,7 +75,7 @@ p {
     word-wrap: break-word;
 }
 
-header,
+/*General styling */
 main,
 footer,
 .container-grid,
@@ -104,9 +84,13 @@ footer,
 .about-stories {
     flex-wrap: wrap;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 
+/* Basic layout */
+/*General header stylng*/
 header {
     position: absolute;
     top: 0;
@@ -117,16 +101,28 @@ header {
     align-items: center;
     justify-content: space-between;
     background: transparent;
-    padding: 30px 18%;
+    padding: 30px 5vw;
     transition: ease .40s;
+    margin-bottom: 20px;
 }
 
-.nav-element {
+#website-logo h1 {
+    font-family: 'Poppins', sans-serif;
+    margin-right: 20px;
+
+}
+
+
+nav ul {
+    list-style: none;
     display: flex;
-    padding: 50px;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
 }
 
-.nav-element a {
+nav a {
     color: var(--text-color);
     font-size: 25px;
     font-weight: 500;
@@ -135,12 +131,29 @@ header {
     transition: ease .40s;
 }
 
-.nav-element a:hover {
+nav a:hover {
     background: rgba(255, 255, 255, 0.206);
     color: var(--text-color);
     box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
     border-radius: 4px;
 }
+
+.signup-btn {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 15px;
+    background: transparent;
+}
+
+/* Burger icon hidden by default */
+.burger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+
 
 #website-logo {
     font-size: 35px;
@@ -149,13 +162,14 @@ header {
 
 }
 
-#sign-up-btn {
-    border: solid;
-    border-color: #221314;
-    border-radius: 5px;
-    align-content: center;
+/*Destination cards grid*/
+.cards-grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
+/*Home first div*/
 .d1 h1 {
     color: rgb(207, 101, 26);
 }
@@ -195,12 +209,15 @@ header {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/*the general main styling*/
 main {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     flex-wrap: wrap;
+    margin-bottom: 100px;
+    margin-top: -100px;
 
     .home-text {
         padding-top: 80px;
@@ -237,15 +254,95 @@ main {
     text-align: center;
 }
 
-.best-services-newsletter {
-    display: inline-block;
+.best-services h4{
+    text-align: center;
 }
+.best-services h1{
+    font-size: 5rem;
+    font-weight: 900;
+    color: #022232;
+}
+
+/*The newsletter styling*/
+.best-services-newsletter {
+    background-image: url(../assets/form-background.png);
+    background-size: cover;
+    width: 100%;
+    padding-top: 5%;
+    display: inline-block;
+    width: 1000px;
+    margin-top: 30px;
+}
+
 
 .best-services-newsletter img {
-    margin-top: -125px;
-    margin-left: 950px;
+    margin-top: -100px;
+    margin-left: 955px;
 }
 
+.best-services-newsletter h1 {
+    font-size: x-large;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+
+.best-services-newsletter input {
+    width: 20em;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.best-services-newsletter button {
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+.best-services-newsletter button:hover {
+    background: orangered;
+}
+
+/*General form styling used in signin, login and contact us*/
+.signup-login-contact-section {
+    background-image: url(../assets/form-background.png);
+    background-size: cover;
+    width: 100%;
+    padding-top: 5%;
+    display: inline-block;
+    width: 1000px;
+    margin-top: 30px;
+}
+
+.signup-login-contact-section h1 {
+    margin-bottom: 30px;
+}
+
+.signup-login-contact-section button {
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background 0.3s;
+    margin-bottom: 40px;
+}
+
+
+.signup-login-contact-section button:hover {
+    background: orangered;
+}
+
+.signup-login-contact-section textarea {
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.signup-login-contact-section input {
+    width: 20em;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+/*Offered services cards styling*/
 .services {
     align-items: center;
     justify-content: center;
@@ -273,7 +370,7 @@ main {
 
 }
 
-
+/*Footer general styling*/
 footer {
 
     color: black;
@@ -333,6 +430,7 @@ footer section:last-of-type {
 
 }
 
+/*Contact email input styling*/
 .email-input {
     border: none;
     background-color: white;
@@ -344,30 +442,12 @@ footer section:last-of-type {
 
 }
 
-#sign-up-section {
-
-    background-image: url(../assets/form-background.png);
-    background-size: cover;
-    border: #5a7184;
-    border-radius: 10%;
-    width: 100rem;
-    padding: 10%;
-    margin-top: 200px;
-    position: sticky;
-    bottom: 50px;
-}
-
-
+/*Used html elements styling*/
 img {
     max-width: 100%;
     height: auto;
     display: block;
 }
-
-
-
-
-
 
 .companies-logos {
     display: flex;
@@ -397,8 +477,6 @@ img {
     display: flex;
     justify-content: space-between;
 }
-
-
 
 .card-companies.active {
 
@@ -484,6 +562,7 @@ img {
 
 }
 
+/*Destination cards styling*/
 .card img {
     width: 400px;
     height: 500px;
@@ -495,18 +574,40 @@ img {
 
 }
 
+.card-content {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.destination span:last-child {
+  color: #343f41;
+}
+
+.card-content {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: left;
+}
+
+
+.destination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.card-content p {
+  color: #777;
+  font-size: 0.9rem;
+  margin-top: 0;  
+}
 .card-content h3 {
     margin-bottom: 8px;
     padding-top: 30px;
     position: left;
-}
-
-.card-content p {
-    color: #666;
-    font-size: 15px;
-    line-height: 1.3;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
@@ -530,23 +631,22 @@ img {
     margin-top: 5rem;
 }
 
-
 /*Second section of the main */
 .second-section {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items: flex-start;
-    gap: 60px;
-    padding: 60px 10%;
+    gap: 30px;
+    padding: 10px 8%;
     flex-wrap: wrap;
-    text-align: left;
 }
 
 .second-section .text,
-.pic-title h4 {
+h4 {
     flex: 1;
     min-width: 320px;
     text-align: left;
+    
 }
 
 .second-section-texts p {
@@ -560,6 +660,11 @@ h4 {
 }
 
 
+.second-section .text {
+    flex: 1;
+    max-width: 450px;
+}
+
 
 .section-cards {
     display: grid;
@@ -567,6 +672,9 @@ h4 {
     gap: 20px;
     position: relative;
 }
+
+
+/*Second section of destination page cards*/
 
 .section-cards .card {
     border-radius: 25px;
@@ -599,7 +707,7 @@ h4 {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-
+/*Used html elements styling*/
 select {
     background-color: #ffffff00;
     size: 50px;
@@ -609,6 +717,8 @@ select {
 }
 
 
+/*Second section*/
+/*About stories testimonials section style*/
 .who-card {
     width: auto;
     height: auto;
@@ -626,11 +736,9 @@ select {
     margin-bottom: 200px;
     margin-top: none;
     display: inline-block;
-    /*inline-block make the div fit its own content*/
+
 }
 
-
-/*About stories testimonials section style*/
 .about-stories {
     display: flex;
     justify-content: space-evenly;
@@ -710,16 +818,38 @@ select {
     padding-left: 50px;
 }
 
-
-.best-services-newsletter {
-    background-image: url(../assets/form-background.png);
-    background-size: cover;
-    width: 90%;
-    padding-top: 5%;
-    display: box;
-    width: 1000px;
+/*Footer lists adaptation*/
+ul li {
+    margin-bottom: 10px;
 }
 
+/*Media queries for more responsiveness to the website*/
+@media (max-width: 1100px) {
+    nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: rgba(255, 255, 255, 0.64);
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    /*Burger used in the shrinked screen*/
+    .burger {
+        display: block;
+    }
+}
 
 @media (max-width: 1200px) {
     header {
@@ -729,6 +859,7 @@ select {
     .nav-element a {
         font-size: 20px;
         padding: 8px 15px;
+        display: flex;
     }
 
     .second-section {
@@ -904,11 +1035,7 @@ select {
         max-width: 150px;
     }
 
-    .best-services-newsletter {
-        width: 100%;
-        padding: 10% 5%;
-        margin: 0 auto;
-    }
+
 
     #new-letter-section {
         width: 90%;
@@ -941,6 +1068,46 @@ select {
 }
 
 
-ul li{
-      margin-bottom: 10px;
+/*added gaping for styling*/
+.sign-up-section {
+    margin-bottom: 220px;
+   margin-top: 70px;
+}
+
+.destination-title {
+    margin-bottom: 150px;
+    margin-top: -150px;
+}
+
+/*Social media icons*/
+.social {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social a i {
+    font-size: 3rem;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+.social a i.bxl-facebook {
+    color: #1877F2;
+}
+
+.social a i.bxl-instagram-alt {
+    color: #E4405F;
+}
+
+.social a i.bxl-twitter {
+    color: #1DA1F2;
+}
+
+
+.social a:hover i {
+    transform: scale(1.2);
+    opacity: 0.85;
 }
