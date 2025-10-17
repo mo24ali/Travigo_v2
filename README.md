@@ -5,7 +5,6 @@
   <br>
   <a href="https://mo24ali.github.io/Travigo_v2/" target="_blank">🔗 Voir la démo en ligne</a>
   ·
-  <a href="https://github.com/mo24ali/Travigo_v2">📦 Dépôt GitHub</a>
 </p>
 
 ---
