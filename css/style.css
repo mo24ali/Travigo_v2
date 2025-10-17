@@ -4,7 +4,7 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
-    margin: 0px;
+    margin: 0px;    
     padding: 0px;
 }
 
@@ -30,8 +30,7 @@ textarea {
 
 .social a {
     height: 80px;
-    width: 80px;
-
+    width: 80px;    
     color: var(--main-color);
     display: inline-flex;
     align-items: center;
@@ -226,7 +225,13 @@ main {
 .best-services {
     text-align: center;
 }
-
+.best-services-newsletter{
+    display: inline-block;
+}
+.best-services-newsletter img{
+    margin-top: -125px;
+    margin-left: 950px;
+}
 .services {
     align-items: center;
     justify-content: center;
@@ -689,4 +694,14 @@ select {
     text-align: start;
     color: #5a7184;
     padding-left: 50px;
+}
+
+
+.best-services-newsletter{
+    background-image: url(../assets/form-background.png);
+    background-size: cover; 
+    width: 90%; 
+    padding-top: 5%;
+    display: box;
+    width:1000px;
 }
