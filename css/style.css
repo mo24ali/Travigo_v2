@@ -939,3 +939,8 @@ select {
         font-size: 0.8rem;
     }
 }
+
+
+ul li{
+      margin-bottom: 10px;
+}
